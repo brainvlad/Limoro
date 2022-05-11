@@ -1,0 +1,24 @@
+$orange: #f36b35;
+$black: #000;
+$title: #313131;
+$text: #434343;
+$gray: #8c8c90;
+$white: #fff;
+
+@mixin tablet-medium() {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin tablet-small() {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile() {
+  @media screen and (max-width: 576px) {
+    @content;
+  }
+}

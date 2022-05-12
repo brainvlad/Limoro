@@ -10,6 +10,10 @@
   height: 100vh;
   padding-top: 80px;
 
+  &-about {
+    background-image: url(./../assets/img/welcome/about-bg.png);
+  }
+
   &__text {
     display: flex;
     flex-direction: column;

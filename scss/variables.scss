@@ -2,6 +2,7 @@ $orange: #f36b35;
 $black: #000;
 $title: #313131;
 $text: #434343;
+$gray-dark: #6a6a6a;
 $gray: #8c8c90;
 $gray-light: #c4c4c4;
 $white-text: #f3f3f3;
@@ -11,6 +12,8 @@ $fz14: 14px;
 $fz16: 16px;
 $fz18: 18px;
 $fz24: 24px;
+$fz32: 32px;
+$fz40: 40px;
 
 @mixin tablet-medium() {
   @media screen and (max-width: 992px) {

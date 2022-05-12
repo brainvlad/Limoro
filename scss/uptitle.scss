@@ -1,0 +1,27 @@
+@import "./variables.scss";
+
+.uptitle {
+  width: 100%;
+  max-width: 630px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
+
+  &__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: $fz40;
+    line-height: 100%;
+    color: $text;
+    padding-bottom: 25px;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170%;
+    color: $gray-dark;
+  }
+}

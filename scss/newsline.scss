@@ -1,0 +1,36 @@
+@import "./variables.scss";
+
+.newsline {
+  display: flex;
+  gap: 30px;
+  margin-top: 60px;
+  margin-bottom: 80px;
+
+  &__item {
+    flex: 1 1 100px;
+    transition: all 0.25s ease-in-out;
+
+    &:hover {
+      transform: translateY(-10px);
+    }
+  }
+
+  &__picture {
+    width: 100%;
+    background-color: $gray-light;
+  }
+
+  &__picture-img {
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.25s ease;
+  }
+
+  &__title {
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 135%;
+    text-align: center;
+  }
+}

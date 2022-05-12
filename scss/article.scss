@@ -1,0 +1,25 @@
+@import "./variables.scss";
+
+.article {
+  margin-top: 120px;
+  display: flex;
+  &__item {
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: $fz38;
+    line-height: 100%;
+    padding-bottom: 12px;
+    color: $title;
+  }
+
+  &__text {
+  }
+
+  &__text-paragraph {
+    padding: 8px 0;
+    color: $text;
+  }
+}

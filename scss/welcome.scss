@@ -26,6 +26,21 @@
     background-size: 100%;
     background-image: url(./../assets/img/welcome/contact-bg.png);
   }
+  &-article {
+    height: 540px;
+    background-position: center top;
+    background-size: 100%;
+
+    &-news {
+      background-image: url(./../assets/img/article/news.png);
+    }
+    &-animals {
+      background-image: url(./../assets/img/article/animals.png);
+    }
+    &-danger {
+      background-image: url(./../assets/img/article/danger.png);
+    }
+  }
 
   &__text {
     display: flex;

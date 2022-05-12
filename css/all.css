@@ -189,6 +189,20 @@ body {
   background-size: 100%;
   background-image: url(./../assets/img/welcome/contact-bg.png);
 }
+.welcome-article {
+  height: 540px;
+  background-position: center top;
+  background-size: 100%;
+}
+.welcome-article-news {
+  background-image: url(./../assets/img/article/news.png);
+}
+.welcome-article-animals {
+  background-image: url(./../assets/img/article/animals.png);
+}
+.welcome-article-danger {
+  background-image: url(./../assets/img/article/danger.png);
+}
 .welcome__text {
   display: flex;
   flex-direction: column;
@@ -462,6 +476,13 @@ body {
   border-bottom: 2px solid #c4c4c4;
   padding: 10px 6px;
 }
+.contact__form-line {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contact__form-line > input {
+  width: calc(100% - 50px);
+}
 .contact__form-btn {
   background: #f36b35;
   border-radius: 2px;
@@ -473,6 +494,23 @@ body {
   width: 100%;
   height: 305px;
   background-color: #c4c4c4;
+}
+
+.article {
+  margin-top: 120px;
+  display: flex;
+}
+.article__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 100%;
+  padding-bottom: 12px;
+  color: #313131;
+}
+.article__text-paragraph {
+  padding: 8px 0;
+  color: #434343;
 }
 
 /*# sourceMappingURL=all.css.map */

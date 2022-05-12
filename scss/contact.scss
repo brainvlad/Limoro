@@ -51,6 +51,13 @@
       padding: 10px 6px;
     }
   }
+  &__form-line {
+    flex-direction: row;
+    justify-content: space-between;
+    & > input {
+      width: calc(100% - 50px);
+    }
+  }
 
   &__form-btn {
     background: #f36b35;

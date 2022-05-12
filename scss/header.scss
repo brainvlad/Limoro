@@ -9,6 +9,7 @@
   height: 76px;
   width: 100%;
   position: fixed;
+  z-index: 100;
 
   &__container {
     height: inherit;

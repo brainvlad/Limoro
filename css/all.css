@@ -61,6 +61,10 @@ body {
   background-image: url(../assets/img/animals/animals-bg.png);
 }
 
+.fullpicture-nature {
+  background-image: url(../assets/img/nature/nature-bg.png);
+}
+
 .header {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
   height: 76px;
@@ -173,6 +177,9 @@ body {
 }
 .welcome-animals {
   background-image: url(./../assets/img/welcome/animals-bg.png);
+}
+.welcome-nature {
+  background-image: url(./../assets/img/welcome/nature-bg.png);
 }
 .welcome__text {
   display: flex;

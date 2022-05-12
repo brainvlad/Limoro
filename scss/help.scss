@@ -1,0 +1,107 @@
+@import "./variables.scss";
+
+.help {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  &__title {
+    margin-bottom: 25px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $fz40;
+    line-height: 100%;
+    color: $text;
+  }
+
+  &__container {
+    display: flex;
+  }
+
+  &__info {
+    width: 50%;
+    margin-right: 130px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $text;
+  }
+
+  &__info-pharagraph {
+    padding: 5px 0;
+  }
+
+  &__nav {
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $text;
+  }
+
+  &__money {
+  }
+
+  &__choice {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__item {
+    background-color: transparent;
+    border: 1px solid #f36b35;
+    border-radius: 2px;
+    padding: 14px 18px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: $fz16;
+    color: $gray;
+    line-height: 100%;
+    font-family: "Proxima Nova Rg";
+    cursor: pointer;
+    transition: all 0.25s ease;
+
+    &.active {
+      background: #f36b35;
+      color: $white;
+    }
+  }
+
+  &__self {
+    margin-top: 20px;
+    display: flex;
+    gap: 22px;
+    position: relative;
+  }
+
+  &__self-label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $text;
+  }
+
+  &__self-input {
+    position: relative;
+    padding: 0 10px 10px 0;
+    font-style: normal;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    font-size: $fz16;
+    color: $gray;
+    line-height: 100%;
+    font-family: "Proxima Nova Rg";
+    width: 80px;
+    border-bottom: 2px solid $gray-light;
+  }
+}

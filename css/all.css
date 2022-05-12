@@ -37,7 +37,28 @@ body {
 
 .main-bg {
   padding-top: 100px;
+  background-image: url(../assets/img/main-bg.png);
+  background-position-y: -120px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.font-ghotam {
   font-family: "Gotham Pro";
+}
+
+.fullpicture {
+  width: 100%;
+  aspect-ratio: 2.4;
+  background-color: #c4c4c4;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.fullpicture-animals {
+  background-image: url(../assets/img/animals/animals-bg.png);
 }
 
 .header {
@@ -149,6 +170,9 @@ body {
 }
 .welcome-about {
   background-image: url(./../assets/img/welcome/about-bg.png);
+}
+.welcome-animals {
+  background-image: url(./../assets/img/welcome/animals-bg.png);
 }
 .welcome__text {
   display: flex;
@@ -282,6 +306,98 @@ body {
   width: 100%;
   object-fit: contain;
   pointer-events: none;
+}
+
+.help {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.help__title {
+  margin-bottom: 25px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 100%;
+  color: #434343;
+}
+.help__container {
+  display: flex;
+}
+.help__info {
+  width: 50%;
+  margin-right: 130px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #434343;
+}
+.help__info-pharagraph {
+  padding: 5px 0;
+}
+.help__nav {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.help__subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #434343;
+}
+.help__choice {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.help__item {
+  background-color: transparent;
+  border: 1px solid #f36b35;
+  border-radius: 2px;
+  padding: 14px 18px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #8c8c90;
+  line-height: 100%;
+  font-family: "Proxima Nova Rg";
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.help__item.active {
+  background: #f36b35;
+  color: #fff;
+}
+.help__self {
+  margin-top: 20px;
+  display: flex;
+  gap: 22px;
+  position: relative;
+}
+.help__self-label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #434343;
+}
+.help__self-input {
+  position: relative;
+  padding: 0 10px 10px 0;
+  font-style: normal;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  color: #8c8c90;
+  line-height: 100%;
+  font-family: "Proxima Nova Rg";
+  width: 80px;
+  border-bottom: 2px solid #c4c4c4;
 }
 
 /*# sourceMappingURL=all.css.map */

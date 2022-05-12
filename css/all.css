@@ -15,4 +15,111 @@ body {
   padding: 0 10px;
 }
 
+.btn {
+  border-radius: 2px;
+  width: 100%;
+  max-width: 220px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 16px 20px;
+  transition: all 0.25s ease;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  color: #fff;
+  background-color: #f36b35;
+  cursor: pointer;
+}
+.btn:hover {
+  box-shadow: 0px 10px 20px rgba(190, 54, 0, 0.15);
+}
+
+.header {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  height: 76px;
+  width: 100%;
+  position: fixed;
+}
+.header__container {
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 82px;
+}
+.header__item {
+  font-size: 16px;
+  transition: color 0.25s ease;
+  color: #c4c4c4;
+  text-decoration: none;
+}
+.header__item:hover {
+  color: #fff;
+}
+.header__item-active {
+  color: #fff;
+}
+.header__item-logo {
+  font-size: 24px;
+  color: #fff;
+  margin-right: 10px;
+}
+.header__language {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+}
+.header__language-item {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.header__language-active {
+  font-weight: 700;
+}
+
+.welcome {
+  background-color: #c4c4c4;
+  background-image: url(./../assets/img/welcome/index-bg.png);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  padding-top: 80px;
+}
+.welcome__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+  padding-bottom: 140px;
+  max-width: 480px;
+}
+.welcome__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: #f3f3f3;
+}
+.welcome__paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #c4c4c4;
+}
+
 /*# sourceMappingURL=all.css.map */

@@ -3,7 +3,14 @@ $black: #000;
 $title: #313131;
 $text: #434343;
 $gray: #8c8c90;
+$gray-light: #c4c4c4;
+$white-text: #f3f3f3;
 $white: #fff;
+
+$fz14: 14px;
+$fz16: 16px;
+$fz18: 18px;
+$fz24: 24px;
 
 @mixin tablet-medium() {
   @media screen and (max-width: 992px) {

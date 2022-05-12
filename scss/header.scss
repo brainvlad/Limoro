@@ -1,0 +1,66 @@
+@import "./variables.scss";
+
+.header {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  height: 76px;
+  width: 100%;
+  position: fixed;
+
+  &__container {
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 82px;
+  }
+
+  &__item {
+    font-size: $fz16;
+    transition: color 0.25s ease;
+    color: $gray-light;
+    text-decoration: none;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  &__item-active {
+    color: $white;
+  }
+
+  &__item-logo {
+    font-size: $fz24;
+    color: $white;
+    margin-right: 10px;
+  }
+
+  &__language {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+  }
+
+  &__language-item {
+    color: $white;
+    font-size: $fz18;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  &__language-active {
+    font-weight: 700;
+  }
+}

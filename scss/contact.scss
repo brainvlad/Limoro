@@ -49,6 +49,19 @@
       outline: none;
       border-bottom: 2px solid $gray-light;
       padding: 10px 6px;
+      transition: all 0.25s;
+
+      &:focus {
+        border-color: $orange;
+      }
+      &.error {
+        color: $error;
+        border-color: $error;
+      }
+      &.true {
+        &::before {
+        }
+      }
     }
   }
   &__form-line {
@@ -60,7 +73,7 @@
   }
 
   &__form-btn {
-    background: #f36b35;
+    background: $orange;
     border-radius: 2px;
     width: 40px;
     height: 40px;

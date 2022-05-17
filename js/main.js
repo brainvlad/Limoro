@@ -15,18 +15,20 @@ const languageHandler = () => {
 const helpHandler = () => {
   const helpChoise = document.querySelector(".help__choice");
   const helpItemList = document.querySelectorAll(".help__item");
-  helpItemList[Symbol.iterator] = [][Symbol.iterator];
-  helpChoise.addEventListener("click", (event) => {
-    if (event.target.classList.contains("help__item")) {
-      for (node of helpItemList) {
-        node.classList.remove("active");
+  if (helpChoise) {
+    helpItemList[Symbol.iterator] = [][Symbol.iterator];
+    helpChoise.addEventListener("click", (event) => {
+      if (event.target.classList.contains("help__item")) {
+        for (node of helpItemList) {
+          node.classList.remove("active");
+        }
+        event.target.classList.add("active");
       }
-      event.target.classList.add("active");
-    }
-  });
+    });
+  }
 };
 
-function burgerMenu(selector) {
+const burgerMenu = (selector) => {
   const menu = $(selector);
   const button = menu.find(".burger-menu__button");
   const links = menu.find(".burger-menu__link");
@@ -48,7 +50,7 @@ function burgerMenu(selector) {
       $(".burger-menu__overlay").fadeOut(100);
     }
   }
-}
+};
 
 burgerMenu(".burger-menu");
 languageHandler();

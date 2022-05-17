@@ -6,7 +6,7 @@
     <title>Контакты</title>
 
     <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/coolicons.css" />
   </head>
   <body>
@@ -55,18 +55,29 @@
     <section class="welcome welcome-contact"></section>
     <main class="container main-bg font-ghotam">
       <section class="contact">
-        <form action="" class="contact__form">
+        <form action="" class="contact__form" id="contactForm">
           <h3 class="contact__form-title">Остались какие-то вопросы?</h3>
           <h4 class="contact__form-subtitle">
             Заполни форму и наши менеджеры свяжутся с тобой
           </h4>
           <div class="contact__form-input">
             <label for="">Имя</label>
-            <input type="text" placeholder="Иван" />
+            <input
+              id="name"
+              name="name"
+              class=""
+              type="text"
+              placeholder="Иван"
+            />
           </div>
           <div class="contact__form-input">
             <label for="">Email</label>
-            <input type="email" placeholder="example@gmail.com" />
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="example@gmail.com"
+            />
           </div>
           <button class="contact__form-btn">
             <svg
@@ -110,5 +121,6 @@
     </main>
     <script src="./js/jquery.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/validate.js"></script>
   </body>
 </html>

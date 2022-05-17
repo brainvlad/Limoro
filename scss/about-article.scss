@@ -64,3 +64,36 @@
     pointer-events: none;
   }
 }
+
+@include tablet-medium() {
+  .about-article {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    &__picture {
+      margin-left: 0;
+      width: 100%;
+    }
+
+    &__text {
+      width: 100%;
+    }
+
+    &__title {
+      text-align: center;
+    }
+
+    &__item-title {
+      text-align: center;
+    }
+
+    &__item-paragraph {
+      text-align: center;
+    }
+  }
+}
+@include tablet-small() {
+}
+@include mobile() {
+}

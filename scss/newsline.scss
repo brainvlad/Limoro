@@ -7,7 +7,7 @@
   margin-bottom: 80px;
 
   &__item {
-    flex: 1 1 100px;
+    flex: 1 1 150px;
     transition: all 0.25s ease-in-out;
 
     &:hover {
@@ -33,4 +33,23 @@
     line-height: 135%;
     text-align: center;
   }
+}
+
+@include tablet-small() {
+  .newsline {
+    flex-wrap: wrap;
+    &__item {
+    }
+
+    &__picture {
+    }
+
+    &__picture-img {
+    }
+
+    &__title {
+    }
+  }
+}
+@include mobile() {
 }

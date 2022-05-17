@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+body {
+  min-width: 320px;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -60,4 +64,11 @@
 }
 .fullpicture-nature {
   background-image: url(../assets/img/nature/nature-bg.png);
+}
+
+@include mobile() {
+  .fullpicture {
+    aspect-ratio: 1;
+    background-size: auto 100%;
+  }
 }

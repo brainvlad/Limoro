@@ -23,3 +23,32 @@
     color: $text;
   }
 }
+
+@include tablet-small() {
+  .article {
+    margin-top: 80px;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 50px;
+
+    &__title {
+    }
+
+    &__text {
+    }
+  }
+}
+
+@include mobile() {
+  .article {
+    margin-top: 40px;
+    &__title {
+      text-align: center;
+      font-size: 32px;
+    }
+
+    &__text {
+      text-align: center;
+    }
+  }
+}

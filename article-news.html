@@ -10,6 +10,29 @@
     <link rel="stylesheet" href="css/coolicons.css" />
   </head>
   <body>
+    <div class="burger-menu">
+      <div class="burger-menu__overlay"></div>
+      <div class="burger-menu__button">
+        <i class="ci-hamburger"></i>
+      </div>
+      <nav class="burger-menu__nav">
+        <a href="./index.html" class="burger-menu__link"><span>Limoro</span></a>
+        <a href="./about.html" class="burger-menu__link"><span>О нас</span></a>
+        <a href="./animals.html" class="burger-menu__link"
+          ><span>Животные</span></a
+        >
+        <a href="./nature.html" class="burger-menu__link"
+          ><span>Климат и ресурсы</span></a
+        >
+        <a href="./contact.html" class="burger-menu__link"
+          ><span>Контакты</span></a
+        >
+        <div class="header__language">
+          <div class="header__language-item header__language-active">RU</div>
+          <div class="header__language-item">EN</div>
+        </div>
+      </nav>
+    </div>
     <header class="header">
       <div class="container header__container">
         <nav class="header__nav">
@@ -88,5 +111,7 @@
         <div class="footer__copyright">© Лысова Анастасия, 2022</div>
       </footer>
     </main>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

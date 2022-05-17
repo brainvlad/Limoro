@@ -105,3 +105,25 @@
     border-bottom: 2px solid $gray-light;
   }
 }
+
+@include tablet-small() {
+  .help {
+    &__container {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+    &__info {
+      width: 100%;
+      margin-right: 0;
+      text-align: center;
+    }
+
+    &__title {
+      font-size: 32px;
+    }
+    &__nav {
+      align-items: center;
+    }
+  }
+}

@@ -49,6 +49,11 @@
   &__money {
   }
 
+  &__msg {
+    color: $orange;
+    display: none;
+  }
+
   &__choice {
     display: flex;
     align-items: center;

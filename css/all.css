@@ -709,6 +709,10 @@ body {
   line-height: 150%;
   color: #434343;
 }
+.help__msg {
+  color: #f36b35;
+  display: none;
+}
 .help__choice {
   display: -webkit-box;
   display: -ms-flexbox;

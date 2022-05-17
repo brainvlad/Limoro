@@ -15,6 +15,8 @@ const languageHandler = () => {
 const helpHandler = () => {
   const helpChoise = document.querySelector(".help__choice");
   const helpItemList = document.querySelectorAll(".help__item");
+  const helpBtn = document.querySelector("#helpBtn");
+
   if (helpChoise) {
     helpItemList[Symbol.iterator] = [][Symbol.iterator];
     helpChoise.addEventListener("click", (event) => {
@@ -24,6 +26,10 @@ const helpHandler = () => {
         }
         event.target.classList.add("active");
       }
+    });
+
+    helpBtn.addEventListener("click", () => {
+      $(".help__msg").slideDown(250);
     });
   }
 };

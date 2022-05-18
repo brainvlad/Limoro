@@ -1,15 +1,19 @@
 const languageHandler = () => {
-  const languageChoise = document.querySelector(".header__language");
+  const languageChoise = document.querySelectorAll(".header__language");
   const languageItemList = document.querySelectorAll(".header__language-item");
   languageItemList[Symbol.iterator] = [][Symbol.iterator];
-  languageChoise.addEventListener("click", (event) => {
-    if (event.target.classList.contains("header__language-item")) {
-      for (node of languageItemList) {
-        node.classList.remove("header__language-active");
+  languageChoise[Symbol.iterator] = [][Symbol.iterator];
+
+  for (choise of languageChoise) {
+    choise.addEventListener("click", (event) => {
+      if (event.target.classList.contains("header__language-item")) {
+        for (node of languageItemList) {
+          node.classList.remove("header__language-active");
+        }
+        event.target.classList.add("header__language-active");
       }
-      event.target.classList.add("header__language-active");
-    }
-  });
+    });
+  }
 };
 
 const helpHandler = () => {
